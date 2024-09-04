@@ -11,7 +11,7 @@ export default function Welcome() {
           <h1 className="text-4xl font-bold">WELCOME TO ARISE</h1>
           <h2>Inspiring, down-to-earth &amp; playful breathwork sessions THAT BENEFIT YOUR ENTIRE WELLBEING (BODY, MIND &amp; SOUL)</h2>
           <p>Did you know we take over 20,000 breaths a day? Yet most of us have restricted breathing patterns. When we&apos;re not breathing to our full potential, we&apos;re also not living to our full potential... since breath is quite literally life.</p>
-          <p>Let's get back to that perfect open breath you were born with, so you can ease any tension or stress, release emotional baggage, increase your clarity and focus, connect more deeply, tune into your intuition and ultimately feel lighter, brighter, and fully alive!</p>
+          <p>Let&apos;s get back to that perfect open breath you were born with, so you can ease any tension or stress, release emotional baggage, increase your clarity and focus, connect more deeply, tune into your intuition and ultimately feel lighter, brighter, and fully alive!</p>
           <p>Change the way you breathe, change the way you live!</p>
         </div>
         <button className='w-full border-2 rounded-full py-4 hover:bg-black hover:text-white hover:border-black'>TELL ME MORE</button>
