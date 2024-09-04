@@ -18,7 +18,7 @@ const config: Config = {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'], // Define your custom font
         merriweather: ['Merriweather', 'serif'], // Optionally add Merriweather too
-      },
+      },      
     },
   },
   plugins: [],
