@@ -20,9 +20,7 @@ export default function Hero() {
             const shrinkFactor = Math.min(1, Math.abs(rect.top) / rect.height);
             const newWidth = 100 - shrinkFactor * 20; // Shrinks to 80% width
             setVideoWidth(newWidth);
-          } else {
-            setVideoWidth(100); // Reset to full width when scrolled back up
-          }
+          } else setVideoWidth(100); // Reset to full width when scrolled back up
         }
 
         if (textRef.current) {
@@ -61,7 +59,7 @@ export default function Hero() {
       >
         <video
           src="/videos/yoga.mp4"
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className="absolute top-0 left-0 w-full h-full object-cover rounded-2xl"
           autoPlay
           loop
           muted

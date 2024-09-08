@@ -2,9 +2,17 @@ import Image from 'next/image';
 
 export default function Welcome() {
   return (
-    <div className="flex flex-row items-center justify-center w-full bg-white z-0 py-10">
-      <div className="w-[85vw] max-w-4xl aspect-w-16 aspect-h-9 p-4 flex justify-center">
-        <Image src="/images/hayley1.jpeg" alt="Welcome Image" width={350} height={0} />
+    <div className="flex flex-row items-center justify-center w-full bg-white z-0 p-10">
+      <div className="w-[85vw] p-4 flex justify-center items-center overflow-hidden">
+        <Image
+          src="/images/welcome.jpg"
+          alt="Welcome Image"
+          width={600}
+          height={0}
+          objectFit="cover"
+          objectPosition="center"
+          className="rounded-2xl"
+        />
       </div>
       <div className="w-[85vw] max-w-4xl p-4 flex flex-col justify-between min-h-[80vh] text-left">
         <div className="flex-grow flex flex-col justify-center space-y-6">
