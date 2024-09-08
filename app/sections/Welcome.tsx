@@ -4,15 +4,13 @@ export default function Welcome() {
   return (
     <div className="flex flex-row items-center justify-center w-full bg-white z-0 p-10">
       <div className="w-[85vw] p-4 flex justify-center items-center overflow-hidden">
-        <Image
-          src="/images/welcome.jpg"
-          alt="Welcome Image"
-          width={600}
-          height={0}
-          objectFit="cover"
-          objectPosition="center"
-          className="rounded-2xl"
-        />
+      <Image 
+        src="/images/welcome.jpg"
+        alt="Welcome"
+        style={{ objectFit: 'cover', objectPosition: 'center' }} 
+        width={500}
+        height={300}
+      />
       </div>
       <div className="w-[85vw] max-w-4xl p-4 flex flex-col justify-between min-h-[80vh] text-left">
         <div className="flex-grow flex flex-col justify-center space-y-6">

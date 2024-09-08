@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="font-montserrat flex items-center justify-between w-full px-14 bg-white text-pastel-turquoise bg-coral-blush">
+    <div className="font-montserrat flex items-center justify-between w-full px-14 py-10 bg-white text-pastel-turquoise bg-coral-blush">
       <div className="flex items-center hover:cursor-pointer">
         <Image src="/images/logo.jpg" alt="Logo Image" width={200} height={0} />
       </div>

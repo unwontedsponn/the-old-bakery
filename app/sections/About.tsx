@@ -20,15 +20,13 @@ export default function About() {
           READ MY STORY
         </button>
       </div>
-      <div className="w-[85vw] p-4 flex justify-center items-center overflow-hidden">
-        <Image
+      <div className="w-[85vw] p-4 flex justify-center items-center overflow-hidden">        
+        <Image 
           src="/images/about.jpg"
-          alt="Welcome Image"
+          alt="Welcome"
+          style={{ objectFit: 'cover', objectPosition: 'center' }} 
           width={600}
-          height={0}
-          objectFit="cover"
-          objectPosition="center"
-          className="rounded-2xl"
+          height={300}
         />
       </div>
     </div>
