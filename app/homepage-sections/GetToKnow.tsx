@@ -1,3 +1,4 @@
+// GetToKnow.tsx
 "use client";
 import { useRef, useState, useEffect } from "react";
 import Card from "../components/Card";
@@ -47,7 +48,7 @@ export default function GetToKnow() {
         style={{ opacity: textOpacity, transition: "opacity 0.3s ease-in-out" }}
         >
           <span className='text-xl md:text-2xl lg:text-4xl'>Get to know </span>
-          <span className='text-4xl md:text-5xl lg:text-6xl tracking-widest'></span>
+          <span className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest'></span>
           Herts Breathwork
       </h1>
       <div className="group relative">

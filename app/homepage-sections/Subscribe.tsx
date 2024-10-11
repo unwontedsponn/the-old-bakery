@@ -1,3 +1,4 @@
+// Subscribe.tsx
 "use client";
 import { useRef, useState, useEffect } from "react";
 import Image from 'next/image';
@@ -48,7 +49,7 @@ export default function Subscribe() {
   return (
     <div
       ref={subscribeRef}
-      className={`relative h-screen ${isRounded ? 'rounded-2xl' : ''}`} // Dynamic rounded corners
+      className={`relative h-screen overflow-hidden ${isRounded ? 'rounded-2xl' : ''}`} // Dynamic rounded corners
       style={{ width: `${subscribeWidth}vw`, transition: "width 0.3s ease-out" }} // Smooth transition
     >
       <Image 
@@ -75,7 +76,7 @@ export default function Subscribe() {
               placeholder="Enter your email here*" 
               className="p-2 mb-4 rounded border border-white text-black"
             />
-            <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+            <button className="bg-pastel-turquoise text-white px-4 py-2 rounded hover:border-black-2">
               Sign up
             </button>
           </div>
