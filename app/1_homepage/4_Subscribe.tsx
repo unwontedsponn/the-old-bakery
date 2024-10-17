@@ -76,7 +76,7 @@ export default function Subscribe() {
               placeholder="Enter your email here*" 
               className="p-2 mb-4 rounded border border-white text-black"
             />
-            <button className="bg-pastel-turquoise text-white px-4 py-2 rounded hover:border-black-2">
+            <button className="bg-pastel-turquoise text-white px-4 py-2 rounded hover:bg-black">
               Sign up
             </button>
           </div>

@@ -26,7 +26,7 @@ export default function Welcome() {
           <p className='font-montserrat text-sm lg:text-base text-center lg:text-left'>Let&apos;s get back to that perfect open breath you were born with, so you can ease any tension or stress, release emotional baggage, increase your clarity and focus, connect more deeply, tune into your intuition and ultimately feel lighter, brighter, and fully alive!</p>
           <p className='font-montserrat text-sm lg:text-base text-center lg:text-left'>Change the way you breathe, change the way you live!</p>
         </div>
-        <button className="w-full border-2 rounded-full py-3 lg:py-4 hover:bg-pastel-turquoise hover:text-white hover:border-black text-lg lg:text-2xl font-montserrat mt-8 lg:mt-0">TELL ME MORE</button>
+        <button className="w-full rounded-full py-3 lg:py-4 hover:bg-black bg-pastel-turquoise text-white hover:border-pastel-turquoise text-lg lg:text-2xl font-montserrat mt-8 lg:mt-0">TELL ME MORE</button>
       </div>
 
     </div>

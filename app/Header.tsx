@@ -31,7 +31,7 @@ export default function Header() {
         isMenuOpen ? 'block' : 'hidden'
       } lg:flex lg:space-x-4 lg:ml-auto text-lg lg:text-3xl font-semibold mt-4 lg:mt-0 flex-col lg:flex-row space-y-4 lg:space-y-0`}>
 
-        <Link href="/breathwork" className="hover:underline">BREATHWORK</Link>
+        <Link href="/2_breathwork" className="hover:underline">BREATHWORK</Link>
 
         <div className="hover:cursor-pointer hover:underline flex flex-row">
           <a 
