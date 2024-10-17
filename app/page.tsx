@@ -1,9 +1,8 @@
 import Header from "./Header";
-import Hero from "./1_homepage/1_Hero";
-import GetToKnow from "./1_homepage/2_GetToKnow";
-import Welcome from "./1_homepage/3_Welcome";
-import Subscribe from "./1_homepage/4_Subscribe";
-import About from "./1_homepage/About";
+import Hero from "./01_homepage/01_Hero";
+import GetToKnow from "./01_homepage/02_GetToKnow";
+import Welcome from "./01_homepage/03_Welcome";
+import Subscribe from "./01_homepage/04_Subscribe";
 import Footer from "./Footer";
 
 
@@ -14,8 +13,7 @@ export default function Home() {
 
       <Hero />
       <GetToKnow />
-      <Welcome />
-      {/* <About />     */}
+      <Welcome />      
       <Subscribe />
       
       <Footer />
