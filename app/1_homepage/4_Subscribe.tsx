@@ -69,7 +69,7 @@ export default function Subscribe() {
             <li>Calming vegal nerve breathing</li>
             <li>20 ways to boost your mood</li>          
           </ul>
-          <p className="mb-4">You'll also get discounts and news on upcoming events.</p>
+          <p className="mb-4">You&apos;ll also get discounts and news on upcoming events.</p>
           <div className="flex flex-col">
             <input 
               type="text" 

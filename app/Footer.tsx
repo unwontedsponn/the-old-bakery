@@ -14,7 +14,7 @@ export default function Footer() {
             className="underline"
             target="_blank"
             rel="noopener noreferrer"
-          >Moonbird</a> discount code 'HAYLEYJADE'
+          >Moonbird</a> discount code &apos;HAYLEYJADE&apos;
         </p>
         <p className="underline">          
           <a 
