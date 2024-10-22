@@ -1,4 +1,3 @@
-// Subscribe.tsx
 "use client";
 import { useRef, useState, useEffect } from "react";
 import Image from 'next/image';
@@ -49,7 +48,7 @@ export default function Subscribe() {
   return (
     <div
       ref={subscribeRef}
-      className={`relative h-screen overflow-hidden ${isRounded ? 'rounded-2xl' : ''}`} // Dynamic rounded corners
+      className={`relative h-screen overflow-hidden transition-all duration-500 ${isRounded ? 'rounded-2xl' : ''}`} // Smoother rounded corner transition
       style={{ width: `${subscribeWidth}vw`, transition: "width 0.3s ease-out" }} // Smooth transition
     >
       <Image 
@@ -60,23 +59,23 @@ export default function Subscribe() {
         quality={100}
         className="z-0"
       />
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-50 p-8">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black bg-opacity-40 p-8">  {/* Reduced opacity for softer effect */}
         <div className={`bg-[rgba(255,255,255,0.1)] p-10 ${isRounded ? 'rounded-2xl' : ''}`}>
-          <h1 className="text-4xl font-bold mb-4">Subscribe for a free breathwork guide</h1>
-          <p className="mb-4">Be the first to hear about upcoming events, and receive a free guide covering:</p>
-          <ul className="list-disc list-inside mb-4">
+          <h1 className="text-4xl lg:text-5xl mb-4 text-pastel-turquoise">Subscribe for a free breathwork guide</h1>
+          <p className="mb-4 text-lg lg:text-xl text-gray-200">Be the first to hear about upcoming events, and receive a free guide covering:</p>
+          <ul className="list-disc list-inside mb-4 text-gray-100 text-left">
             <li>Conscious connected breath</li>
-            <li>Calming vegal nerve breathing</li>
+            <li>Calming vagus nerve breathing</li>
             <li>20 ways to boost your mood</li>          
           </ul>
-          <p className="mb-4">You&apos;ll also get discounts and news on upcoming events.</p>
+          <p className="mb-4 text-lg lg:text-xl text-gray-200">You&apos;ll also get discounts and news on upcoming events.</p>
           <div className="flex flex-col">
             <input 
-              type="text" 
+              type="email" 
               placeholder="Enter your email here*" 
-              className="p-2 mb-4 rounded border border-white text-black"
+              className="p-3 mb-4 rounded border border-white text-black"
             />
-            <button className="bg-pastel-turquoise text-white px-4 py-2 rounded hover:bg-black">
+            <button className="mx-auto w-auto bg-pastel-turquoise text-white py-3 px-6 rounded-full hover:bg-coral-blush hover:border-white transition-all duration-300">
               Sign up
             </button>
           </div>

@@ -41,52 +41,52 @@ export default function GetToKnow() {
   }, []);
 
   return (
-    <div className="w-[85vw]">      
+    <div className="w-[85vw]">
       <h1 
         ref={textRef}
-        className="text-4xl md:text-5xl lg:text-6xl font-bold text-pastel-turquoise"
-        style={{ opacity: textOpacity, transition: "opacity 0.3s ease-in-out" }}
-        >
-          <span className='text-xl md:text-2xl lg:text-4xl'>Get to know </span>
-          <span className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl tracking-widest'></span>
-          Herts Breathwork
+        className="text-4xl md:text-5xl lg:text-6xl font-normal text-pastel-turquoise transform transition-opacity transition-transform duration-700 ease-in-out mb-8"
+        style={{ opacity: textOpacity, transform: `scale(${0.95 + textOpacity * 0.05})` }} // Added scaling effect
+      >
+        <span className='text-xl md:text-2xl lg:text-4xl'>Client stories </span>        
       </h1>
+      
       <div className="group relative">
-        <div className='flex overflow-x-auto overflow-y-hidden whitespace-nowrap space-x-4 scrollbar-hide group-hover:overflow-x-auto'>
-        <Card 
-          imageSrc='/images/card1.jpg'
-          subtitle='Personalized 1-on-1 Coaching'
-          title='Private Classes'
-        />
-        <Card 
-          imageSrc='/images/card2.jpg'
-          subtitle='Dynamic Group Sessions'
-          title='Group Classes'
-        />
-        <Card 
-          imageSrc='/images/card3.jpg'
-          subtitle='Connect and Breathe Together'
-          title='Group Classes'
-        />
+        <div className='flex overflow-x-auto overflow-y-hidden whitespace-nowrap space-x-4 scrollbar-hide'>
+          <Card 
+            imageSrc='/images/card1.jpg'
+            subtitle='Personalized 1-on-1 Coaching'
+            title='Private Classes'
+            className="rounded-2xl card-hover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"  // Hover effect
+          />
+          <Card 
+            imageSrc='/images/card2.jpg'
+            subtitle='Dynamic Group Sessions'
+            title='Group Classes'
+            className="rounded-2xl card-hover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"  // Hover effect
+          />
         <Card 
           imageSrc='/images/card4.jpg'
           subtitle='Shared Energy, Shared Growth'
           title='Group Classes'
+          className="rounded-2xl card-hover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"  // Hover effect
         />  
         <Card 
           imageSrc='/images/card5.jpg'
           subtitle='Empowering Group Experience'
           title='Group Classes'
+          className="rounded-2xl card-hover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"  // Hover effect
         />  
         <Card 
           imageSrc='/images/card6.jpg'
           subtitle='Community Sessions'
           title='Group Classes'
+          className="rounded-2xl card-hover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"  // Hover effect
         />  
         <Card 
           imageSrc='/images/card7.jpg'
           subtitle='Supportive Group Environment'
           title='Group Classes'
+          className="rounded-2xl card-hover transition-transform duration-300 ease-in-out transform hover:scale-105 hover:shadow-xl"  // Hover effect
         />  
         </div>
       </div>

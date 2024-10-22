@@ -8,7 +8,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="font-montserrat w-full px-6 py-4 bg-white text-pastel-turquoise bg-coral-blush flex flex-col lg:flex-row items-center justify-between">
+    <div className="w-full px-6 lg:px-12 py-4 bg-white text-pastel-turquoise flex flex-col lg:flex-row items-center justify-between">
       
       {/* Logo */}
       <div className="flex items-center hover:cursor-pointer">
@@ -31,7 +31,7 @@ export default function Header() {
         isMenuOpen ? 'block' : 'hidden'
       } lg:flex lg:space-x-4 lg:ml-auto text-lg lg:text-3xl font-semibold mt-4 lg:mt-0 flex-col lg:flex-row space-y-4 lg:space-y-0`}>
 
-        <Link href="/02_breathwork" className="hover:underline">BREATHWORK</Link>
+        <Link href="/02_breathwork" className="hover:underline font-light">Breathwork</Link>
 
         <div className="hover:cursor-pointer hover:underline flex flex-row">
           <a 
@@ -39,18 +39,12 @@ export default function Header() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p>WHAT&apos;S ON</p>
-          </a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M14 3h7v7" />
-            <path d="M5 12v7a2 2 0 0 0 2 2h7" />
-            <polyline points="14 3 21 3 21 10" />
-            <line x1="10" y1="14" x2="21" y2="3" />
-          </svg>
+            <p className='font-light'>Events</p>
+          </a>          
         </div>                    
 
-        <p className="hover:cursor-pointer hover:underline">BLOG</p>
-        <p className="hover:cursor-pointer hover:underline">CONTACT</p>
+        <p className="hover:cursor-pointer hover:underline font-light">Blog</p>
+        <Link href="/04_contact" className="hover:underline font-light">Contact</Link>
       </div>
       
     </div>

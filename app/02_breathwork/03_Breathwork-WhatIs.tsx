@@ -1,27 +1,28 @@
 // Breathwork-WhatIs.tsx
 export default function BreatheWhatIs() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-6 lg:p-12 space-y-10 lg:space-y-16 w-[85vw]">
-      <div className="w-full lg:flex lg:items-center lg:justify-between space-y-6 lg:space-y-0">
+    <main className="flex min-h-screen flex-col items-center justify-center py-12 lg:py-16 w-[85vw] space-y-12 lg:space-y-16">
+      <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between space-y-6 lg:space-y-0 lg:gap-12">
+        
         {/* Text Section */}
-        <div className="lg:w-1/2 space-y-4">
-          <h1 className="text-3xl lg:text-5xl font-bold text-center lg:text-left">
+        <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
+          <h1 className="text-3xl lg:text-5xl font-bold text-pastel-turquoise">
             What is Transformational Breath®?
           </h1>
-          <p className="text-lg lg:text-xl text-center lg:text-left">
+          <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
             Transformational Breath® was developed over four decades by Dr. J Kravitz, creator of the preeminent Transformational Breath® Foundation...
           </p>
-          <p className="text-lg lg:text-xl text-center lg:text-left">
-            If you&apos;re familiar with Wim Hof, Rebirthing, or Holotropic breathwork...
+          <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+            If you&apos;re familiar with Wim Hof, Rebirthing, or Holotropic breathwork, you&apos;ll be interested to know that Transformational Breath® has expanded beyond these modalities...
           </p>
         </div>
 
         {/* Image Section */}
         <div className="lg:w-1/2 flex justify-center items-center">
           <img
-            src="/images/breathe/ben.jpg" // Replace with your image path
+            src="/images/breathe/ben.jpg"
             alt="Transformational Breath"
-            className="w-full h-auto object-cover rounded-2xl"
+            className="w-full lg:w-[90%] h-auto object-cover rounded-2xl shadow-lg"
           />
         </div>
       </div>
