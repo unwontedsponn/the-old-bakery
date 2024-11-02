@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import FadeIn from '@/app/components/FadeIn';
 
-export default function Welcome() {
+export default function GetInvolved() {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between w-[85vw] bg-white py-16 lg:py-32 gap-8">
 
-      {/* Image Section */}
+      {/* Image Section */}      
       <div className="w-full lg:w-1/2 flex justify-center items-center overflow-hidden rounded-2xl shadow-lg">
         <Image 
           src="/images/welcome.jpg"
@@ -14,12 +15,12 @@ export default function Welcome() {
           height={400} 
           className="w-[90vw] lg:w-[600px] rounded-2xl shadow-lg" // Add shadow for consistency with other elements
         />
-      </div>
+      </div>      
 
       {/* Text Section */}
       <div className="w-full lg:w-1/2 max-w-4xl p-6 bg-white rounded-2xl flex flex-col justify-center space-y-6">
         <h1 className="text-3xl lg:text-4xl text-pastel-turquoise text-center lg:text-left">          
-          Welcome to Herts Breathwork
+          Get Involved
         </h1>
         <h2 className="text-lg lg:text-xl text-center lg:text-left text-gray-700">
           Inspiring, down-to-earth &amp; playful breathwork sessions that benefit your entire wellbeing (body, mind &amp; soul)

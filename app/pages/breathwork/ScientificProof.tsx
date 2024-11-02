@@ -12,7 +12,7 @@ export default function BreatheHero() {
       {/* Text Section */}
       <div className="flex flex-col max-w-lg lg:max-w-none space-y-6 lg:space-y-8 text-center lg:text-left">
         <h1 className="text-3xl lg:text-5xl text-pastel-turquoise">
-          When was the last time you felt your best?
+          Scientific Proof...
         </h1>
         <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
           Living well all starts with your physical and mental health. We know this and yet it can be difficult to prioritise healing our ailments and emotions from the inside out...

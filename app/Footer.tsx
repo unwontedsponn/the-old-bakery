@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="w-[80vw] flex flex-col lg:flex-row justify-between items-center text-center lg:text-left space-y-8 lg:space-y-0">
         
         {/* Copyright Section */}
-        <div className="flex justify-center text-base lg:text-lg hover:cursor-pointer">
+        <div className="flex justify-center text-base lg:text-lg">
           <p>&copy; 2024 Herts Breathwork</p>
         </div>
 
@@ -36,12 +36,12 @@ export default function Footer() {
         <div className="flex justify-center space-x-6">
           {/* TikTok Icon */}
           <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="hover:text-coral-blush transition-colors duration-300 border-b-2 border-transparent hover:border-coral-blush">
-            <img src="icons/instagram.png" alt="Instagram" className="w-6 h-6 lg:w-8 lg:h-8" />
+            <img src="/icons/instagram.png" alt="Instagram" className="w-6 h-6 lg:w-8 lg:h-8" />
           </a>
 
           {/* Instagram Icon */}
           <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-coral-blush transition-colors duration-300 border-b-2 border-transparent hover:border-coral-blush">
-            <img src="icons/tik-tok.png" alt="TikTok" className="w-6 h-6 lg:w-8 lg:h-8" />
+            <img src="/icons/tik-tok.png" alt="TikTok" className="w-6 h-6 lg:w-8 lg:h-8" />
           </a>
         </div>
       </div>

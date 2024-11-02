@@ -1,19 +1,22 @@
 import Header from "./Header";
-import Hero from "./01_homepage/01_Hero";
-import GetToKnow from "./01_homepage/02_GetToKnow";
-import Welcome from "./01_homepage/03_Welcome";
-import Subscribe from "./01_homepage/04_Subscribe";
+import Hero from "./pages/homepage/Hero";
+import GetToKnow from "./pages/homepage/GetToKnow";
+import Welcome from "./pages/homepage/Welcome";
+import Subscribe from "./pages/homepage/Subscribe";
+import WhyBreathwork from "./pages/homepage/WhyBreathwork";
+import GetInvolved from "./pages/homepage/GetInvolved";
 import Footer from "./Footer";
-
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
       <Header />      
 
-      <Hero />
+      <Hero />      
+      <Welcome />     
+      <WhyBreathwork />
       <GetToKnow />
-      <Welcome />      
+      <GetInvolved />
       <Subscribe />
       
       <Footer />

@@ -1,5 +1,5 @@
-import Header from "../Header";
-import Footer from "../Footer";
+import Header from "../../Header";
+import Footer from "../../Footer";
 
 export default function Contact() {
   return (
@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
           <h1 className="text-3xl lg:text-5xl text-pastel-turquoise">Get in Touch</h1>
           <p className="text-lg lg:text-xl text-gray-700">
-            We'd love to hear from you! Fill out the form to get in touch.
+            We&apos;d love to hear from you! Fill out the form to get in touch.
           </p>
           <div className="text-md lg:text-lg space-y-2 text-gray-600">            
             <p>Location: Hitchin, Letchworth, and surrounding areas</p>

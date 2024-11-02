@@ -6,7 +6,7 @@ export default function BreatheWhatIs() {
         
         {/* Text Section */}
         <div className="lg:w-1/2 space-y-6 text-center lg:text-left">
-          <h1 className="text-3xl lg:text-5xl font-bold text-pastel-turquoise">
+          <h1 className="text-3xl lg:text-5xl text-pastel-turquoise">
             What is Transformational Breath®?
           </h1>
           <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">

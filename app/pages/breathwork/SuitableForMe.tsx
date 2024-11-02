@@ -6,7 +6,7 @@ export default function BreatheSuitableForMe() {
       {/* Text Section */}
       <div className="w-full lg:w-3/4 space-y-8 text-center lg:text-left">
         {/* Heading */}
-        <h1 className="text-3xl lg:text-5xl font-bold text-pastel-turquoise">
+        <h1 className="text-3xl lg:text-5xl text-pastel-turquoise">
           Is Transformational Breath® suitable for me?
         </h1>
         
@@ -17,31 +17,7 @@ export default function BreatheSuitableForMe() {
         <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
           The most common reasons people get in touch are listed above, but if you need support with a medical or emotional condition not shown, please get in touch before booking so we can discuss if Transformational Breath® is the right approach for you. Disclaimer: Herts Breathwork does not diagnose, treat, or cure any condition. Consult your GP for medical advice.
         </p>
-      </div>
-
-      {/* Image Section */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-        <img
-          src="/images/card1.jpg"
-          alt="Suitable Image 1"
-          className="w-full h-auto object-cover rounded-2xl shadow-lg"
-        />
-        <img
-          src="/images/card2.jpg"
-          alt="Suitable Image 2"
-          className="w-full h-auto object-cover rounded-2xl shadow-lg"
-        />
-        <img
-          src="/images/card3.jpg"
-          alt="Suitable Image 3"
-          className="w-full h-auto object-cover rounded-2xl shadow-lg"
-        />
-        <img
-          src="/images/card4.jpg"
-          alt="Suitable Image 4"
-          className="w-full h-auto object-cover rounded-2xl shadow-lg"
-        />
-      </div>
+      </div>      
     </main>
   );
 }
