@@ -21,19 +21,22 @@ async function getPost(slug: string) {
   }
 }
 
-export default async function Blog({ params }: { params: { slug: string } }) {
-  // Access `slug` directly without awaiting `params`
+// Ensure the component function is not marked as `async` unless required.
+export default function Blog({ params }: { params: { slug: string } }) {
+  // No `await` needed for destructuring `params`
   const { slug } = params;
 
-  const post = await getPost(slug);
+  const postPromise = getPost(slug);
 
-  if (!post) notFound(); // Handle 404 if the post is not found
+  return postPromise.then(post => {
+    if (!post) notFound(); // Handle 404 if the post is not found
 
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <Header />
-      <BlogPost title={post.data.title} date={post.data.date} content={post.content} />
-      <Footer />
-    </main>
-  );
+    return (
+      <main className="flex min-h-screen flex-col items-center justify-between">
+        <Header />
+        <BlogPost title={post.data.title} date={post.data.date} content={post.content} />
+        <Footer />
+      </main>
+    );
+  });
 }
