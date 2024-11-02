@@ -22,8 +22,8 @@ async function getPost(slug: string) {
 }
 
 export default async function Blog({ params }: { params: { slug: string } }) {
-  // Await the params object before accessing its properties
-  const { slug } = await params;
+  // Access `slug` directly without awaiting `params`
+  const { slug } = params;
 
   const post = await getPost(slug);
 
