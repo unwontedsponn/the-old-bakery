@@ -1,4 +1,3 @@
-// Blog-[slug]-page.tsx
 import fs from 'fs/promises'; // Use async fs methods
 import path from 'path';
 import matter from 'gray-matter';
@@ -6,6 +5,7 @@ import { notFound } from 'next/navigation';
 import BlogPost from '@/app/components/BlogPost';
 import Header from '@/app/Header';
 import Footer from '@/app/Footer';
+import { GetServerSideProps } from 'next';
 
 const postsDirectory = path.join(process.cwd(), 'app/blogData');
 
@@ -23,7 +23,6 @@ async function getPost(slug: string) {
 
 // Ensure the component function is not marked as `async` unless required.
 export default function Blog({ params }: { params: { slug: string } }) {
-  // No `await` needed for destructuring `params`
   const { slug } = params;
 
   const postPromise = getPost(slug);
@@ -40,3 +39,15 @@ export default function Blog({ params }: { params: { slug: string } }) {
     );
   });
 }
+
+// Add this function to ensure `params` typing
+export const getServerSideProps: GetServerSideProps = async ({ params }) => {
+  if (!params?.slug) {
+    return { notFound: true };
+  }
+  return {
+    props: {
+      params,
+    },
+  };
+};
