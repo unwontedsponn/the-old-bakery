@@ -20,14 +20,10 @@ async function getPost(slug: string) {
   }
 }
 
-interface BlogProps {
-  params: {
-    slug: string;
-  };
-}
+type Params = Promise<{ slug: string }>;
 
-export default async function Blog({ params }: BlogProps) {
-  // Directly use `params` as a plain object, not a `Promise`
+export default async function Blog(props: { params: Params }) {
+  const params = await props.params;
   const { slug } = params;
 
   const post = await getPost(slug);
