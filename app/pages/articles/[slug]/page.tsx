@@ -27,6 +27,7 @@ interface BlogProps {
 }
 
 export default async function Blog({ params }: BlogProps) {
+  // Directly use `params` as a plain object, not a `Promise`
   const { slug } = params;
 
   const post = await getPost(slug);
