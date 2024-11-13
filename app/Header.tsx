@@ -60,7 +60,7 @@ export default function Header() {
       <div
         className={`${
           isMenuOpen ? "block" : "hidden"
-        } lg:flex lg:space-x-4 lg:ml-auto text-lg lg:text-3xl font-semibold mt-4 lg:mt-0 flex-col lg:flex-row space-y-4 lg:space-y-0`}
+        } lg:flex lg:space-x-4 lg:ml-auto text-lg lg:text-3xl font-semibold mt-4 lg:mt-0 flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-4`}
       >
         <Link
           href="/pages/book"

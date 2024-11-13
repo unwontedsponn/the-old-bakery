@@ -5,6 +5,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import Header from '@/app/Header';
 import Footer from '@/app/Footer';
+import Link from 'next/link';
 
 const postsDirectory = path.join(process.cwd(), 'app/blogData');
 
@@ -44,6 +45,12 @@ export default async function Blog({ params }: { params: Promise<Params> }) {
         >
           {content}
         </ReactMarkdown>
+
+        <Link href='/pages/book'>
+          <button className="self-center lg:self-start w-auto rounded-full px-6 py-3 bg-pastel-turquoise text-white hover:bg-coral-blush hover:border-pastel-turquoise text-sm lg:text-base transition-colors duration-300">
+            Book session
+          </button>
+        </Link>    
       </article>
       <Footer />
     </main>
