@@ -24,7 +24,7 @@ export default function TextSection1() {
           When was the last time you felt your best?
         </h1>        
         <p className="text-sm lg:text-base text-center lg:text-left text-gray-600">
-          Living well all starts with your physical and mental health. We know this and yet it can be difficult to prioritise healing our ailments and emotions from the inside out. But what if I told you that feeling better doesn&apos;'t have to be complicated? That change is possible and the answer is quite literally right under your nose. It&apos;'s called Transformational Breath®, a powerful therapy that addresses root causes of issues by helping you to breathe better.
+          Living well all starts with your physical and mental health. We know this and yet it can be difficult to prioritise healing our ailments and emotions from the inside out. But what if I told you that feeling better doesn&apos;t have to be complicated? That change is possible and the answer is quite literally right under your nose. It&apos;s called Transformational Breath®, a powerful therapy that addresses root causes of issues by helping you to breathe better.
         </p>
         <p className="text-sm lg:text-base text-center lg:text-left text-gray-600">
         Get to know our expert team of facilitators, all trained by the world-leading Transformational Breath® Foundation (TBF), a member of the Global Professional Breathwork Alliance.
