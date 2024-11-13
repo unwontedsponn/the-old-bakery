@@ -1,10 +1,12 @@
 import Header from "./Header";
 import Hero from "./pages/homepage/Hero";
 import GetToKnow from "./pages/homepage/GetToKnow";
-import Welcome from "./pages/homepage/Welcome";
+import TextSection1 from "./pages/homepage/TextSection1";
+import BenefitsSection from "./pages/homepage/BenefitsSection";
+import TextSection2 from "./pages/homepage/TextSection2";
 import Subscribe from "./pages/homepage/Subscribe";
-import WhyBreathwork from "./pages/homepage/WhyBreathwork";
-import GetInvolved from "./pages/homepage/GetInvolved";
+import TextSection3 from "./pages/homepage/TextSection3";
+import TextSection4 from "./pages/homepage/TextSection4";
 import Footer from "./Footer";
 
 export default function Home() {
@@ -13,10 +15,12 @@ export default function Home() {
       <Header />      
 
       <Hero />      
-      <Welcome />     
-      <WhyBreathwork />
-      <GetToKnow />
-      <GetInvolved />
+      <TextSection1 />        
+      <TextSection2 />
+      {/* <GetToKnow /> */}
+      <BenefitsSection />
+      <TextSection3 />
+      <TextSection4 />
       <Subscribe />
       
       <Footer />

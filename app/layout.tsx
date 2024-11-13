@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css"; // Ensure fonts are correctly imported through CSS
 import { IBM_Plex_Sans } from 'next/font/google';
+import { Analytics } from "@vercel/analytics/react"
 
 // Load the IBM Plex Sans font
 const ibmPlexSans = IBM_Plex_Sans({
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ibmPlexSans.className}>{children}</body>
+      <body className={ibmPlexSans.className}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
