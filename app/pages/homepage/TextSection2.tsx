@@ -11,7 +11,7 @@ export default function TextSection2() {
           What is Transformational Breath®?
         </h1>        
         <p className="text-sm lg:text-base text-center lg:text-left text-gray-600">
-          Transformational Breath® was developed over four decades by Dr J Kravitz. It's an open-mouthed, conscious breathing technique, with no pauses, which is gentle yet powerful. If you're familiar with Wim Hof, Rebirthing or Holotropic breathwork you'll be interested to know that Transformational Breath® has expanded beyond these modalities, integrating various insights from Kundalini Yoga, breath analysis, sound healing, and acupressure - alongside a spiritual framework that's accessible to all. Personal coaching is also a valuable aspect of the session.
+          Transformational Breath® was developed over four decades by Dr J Kravitz. It&apos;'s an open-mouthed, conscious breathing technique, with no pauses, which is gentle yet powerful. If you&apos;'re familiar with Wim Hof, Rebirthing or Holotropic breathwork you&apos;'ll be interested to know that Transformational Breath® has expanded beyond these modalities, integrating various insights from Kundalini Yoga, breath analysis, sound healing, and acupressure - alongside a spiritual framework that&apos;'s accessible to all. Personal coaching is also a valuable aspect of the session.
         </p>
         <p className="text-sm lg:text-base text-center lg:text-left text-gray-600">
           In addition to TBF being the go-to breath school for healthcare professionals worldwide, all graduates are accredited by the International Coaching Federation.
