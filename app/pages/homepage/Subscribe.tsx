@@ -63,7 +63,7 @@ export default function Subscribe() {
         <div className={`bg-[rgba(255,255,255,0.1)] p-10 ${isRounded ? 'rounded-2xl' : ''}`}>
           <h1 className="text-4xl lg:text-5xl mb-4 text-pastel-turquoise">Subscribe for a free breathwork guide</h1>
           <p className="mb-4 text-lg lg:text-xl text-gray-200">Be the first to hear about upcoming events, and receive a free guide covering:</p>
-          <ul className="list-disc list-inside mb-4 text-gray-100 text-left">
+          <ul className="list-disc list-inside mb-4 text-gray-100">
             <li>Conscious connected breath</li>
             <li>Calming vagus nerve breathing</li>
             <li>20 ways to boost your mood</li>          
