@@ -7,17 +7,10 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        'banana-mania': '#ffe9af',
-        'pastel-turquoise': '#9fccc3',
-        'coral-blush': '#f7b5a4',
-        'lavender-blue': '#c3baf9',
-        'mint-cream': '#e8f8f5',
-      },    
+    extend: {          
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'], // Define your custom font
-        merriweather: ['Merriweather', 'serif'], // Optionally add Merriweather too
+        'buongiorno': ['Buongiorno Rastellino', 'cursive'], // Add your custom font
+        'sans': ['Josefin Sans', 'sans-serif'], // Add Josefin Sans for body text
       },      
     },
   },

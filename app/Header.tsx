@@ -6,31 +6,39 @@ import { usePathname } from "next/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    setMounted(true);
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50); // Change threshold as needed
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
-
   return (
-    <header className="w-full bg-white text-pastel-turquoise flex flex-col items-center px-6 lg:px-12 py-4">
+    <header
+      className={`fixed w-full ${
+        isScrolled
+          ? "bg-white text-black"
+          : "bg-transparent text-white"
+      } flex flex-col items-center px-6 lg:px-12 py-4 z-50 top-0 transition-all duration-300`}
+    >
       {/* Top Header Line with Logo and Nav Links */}
       <div className="w-full flex flex-col lg:flex-row items-center justify-between">
-        
         {/* Logo */}
         <div className="flex items-center hover:cursor-pointer">
           <Link href="/">
             <Image
-              src="/images/logo.jpg"
+              src="/logo/logo.png"
               alt="Logo Image"
               width={150}
               height={0}
-              className="lg:w-[200px]"
+              className=""
             />
           </Link>
         </div>
@@ -62,12 +70,14 @@ export default function Header() {
         <nav
           className={`${
             isMenuOpen ? "block" : "hidden"
-          } lg:flex lg:space-x-4 lg:ml-auto text-lg lg:text-3xl font-semibold mt-4 lg:mt-0 flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-4`}
+          } lg:flex lg:space-x-4 lg:ml-auto text-lg lg:text-3xl mt-4 lg:mt-0 flex-col lg:flex-row space-y-4 lg:space-y-0 space-x-4`}
         >
           <Link
             href="/pages/book"
             className={`hover:underline font-light ${
-              pathname === "/pages/book" ? "underline text-pastel-turquoise" : ""
+              pathname === "/pages/book"
+                ? "underline text-pastel-turquoise"
+                : ""
             }`}
           >
             Book
@@ -103,31 +113,6 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-      </div>
-
-      {/* Accolade Logos */}
-      <div className="flex items-center justify-center space-x-8 mt-6 lg:mt-0">
-        <Image
-          src="/images/logos/tbf.png"
-          alt="Accolade Logo 1"
-          width={80}
-          height={0}
-          className="w-[80px] h-auto lg:w-[100px]"
-        />
-        <Image
-          src="/images/logos/icf.png"
-          alt="Accolade Logo 2"
-          width={80}
-          height={0}
-          className="w-[80px] h-auto lg:w-[100px]"
-        />
-        <Image
-          src="/images/logos/gpba.png"
-          alt="Accolade Logo 3"
-          width={80}
-          height={0}
-          className="w-[80px] h-auto lg:w-[100px]"
-        />
       </div>
     </header>
   );

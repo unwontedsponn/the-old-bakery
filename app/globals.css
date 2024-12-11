@@ -4,53 +4,48 @@
 
 /* Fonts */
 @font-face {
-  font-family: 'Merriweather';
-  src: url('/fonts/merriweather/Merriweather-Regular.ttf') format('truetype');       
+  font-family: 'Buongiorno Rastellino';
+  src: url('/fonts/buongiorno-rastellino/BuongiornoRastellino-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Montserrat';
-  src: url('/fonts/montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 900; /* Range for variable font */
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
 
 /* Set the default fonts */
 html {
-  font-family: 'IBM Plex Sans', 'Merriweather', 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', 'Buongiorno Rastellino', sans-serif;
 }
 
 /**
  * Markdown Styling for Herts Breathwork
  */
-/*--------------------------------------------------------------------------------------------------------------------*/
+.markdown-content h1, .markdown-content h2, .markdown-content h3 {
+  font-family: 'Buongiorno Rastellino', cursive;
+  color: #9fccc3; /* pastel-turquoise for h1 */
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .markdown-content h1 {
-  color: #9fccc3; /* pastel-turquoise */
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;  
+  font-size: 2.5rem;
 }
 
-.markdown-content h2 {  
+.markdown-content h2 {
+  font-size: 2rem;
   color: #f7b5a4; /* coral-blush */
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;  
 }
 
-.markdown-content h3 {  
+.markdown-content h3 {
+  font-size: 1.5rem;
   color: #c3baf9; /* lavender-blue */
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;  
 }
 
 .markdown-content p {
-  color: #555; /* Neutral text color for readability */
+  color: #555;
+  font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 1rem;
-  font-size: 1rem;  
+  font-size: 1rem;
 }
 
 .markdown-content strong {
@@ -58,29 +53,21 @@ html {
   color: #9fccc3; /* pastel-turquoise */
 }
 
-.markdown-content ul {
-  list-style-type: disc;
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
+.markdown-content ul,
 .markdown-content ol {
-  list-style-type: decimal;
   margin-left: 1.5rem;
   margin-bottom: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .markdown-content li {
-  color: #555;
-  margin-bottom: 0.5rem;  
+  margin-bottom: 0.5rem;
 }
 
 .markdown-content blockquote {
   border-left: 4px solid #ffe9af; /* banana-mania */
   padding-left: 1rem;
   color: #555;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   font-style: italic;
 }
 
@@ -92,17 +79,7 @@ html {
   margin: auto;
 }
 
-.markdown-content .references {
-  font-size: 0.65rem;
-  opacity: 0.5;  
-  line-height: 1.4;
-  color: #555;
-}
-
-/**
- * Responsive Video Styling
- */
-/*--------------------------------------------------------------------------------------------------------------------*/
+/* Responsive Video Styling */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
