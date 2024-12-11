@@ -11,8 +11,8 @@ const josefinSans = Josefin_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Herts Breathwork",
-  description: "Breathwork in Hitchin, Letchworth and surrounding areas",
+  title: "The Old Bakery",
+  description: "The Old Bakery Meeting House Shefford",
 };
 
 export default function RootLayout({
